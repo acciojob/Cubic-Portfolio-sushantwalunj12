@@ -1,2 +1,180 @@
 
 /* Your CSS Code here. */
+body {
+  font-family: sans-serif;
+
+  display: grid;
+  min-height: 45vw;
+  place-items: center;
+  place-content: center;
+  margin: 0;
+  color: white;
+}
+
+.wrap {
+  width: 300px;
+  height: 300px;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-150px);
+  animation: 20s rotation infinite;
+  animation-delay: 2s;
+}
+
+.cube > * {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: slateblue;
+  border-radius: 5px;
+  text-align: center;
+
+  border: 5px rgb(255, 255, 255) solid;
+  letter-spacing: 3px;
+  font-size: 22pt;
+  box-shadow: slateblue 0px 0px 10px;
+  animation: Build-up 0s 1 0s, infinite 20s color-switch 2s;
+}
+
+@keyframes rotation {
+  0% {
+    transform: translateZ(-150px) rotateY(0deg);
+  }
+  10% {
+    transform: translateZ(-150px) rotateY(90deg);
+  }
+  15% {
+    transform: translateZ(-150px) rotateY(-90deg);
+  }
+  40% {
+    transform: translateZ(-150px) rotateX(90deg);
+  }
+  60% {
+    transform: translateZ(-150px) rotateY(-180deg);
+  }
+  80% {
+    transform: translateZ(-150px) rotateX(-90deg);
+  }
+  100% {
+    transform: translateZ(-150px) rotateX(0deg);
+  }
+}
+
+.front {
+  transform: rotateY(0deg) translateZ(150px);
+  background-color: #f8cc0f;
+}
+.back {
+  transform: rotateY(180deg) translateZ(150px);
+  background-color: #4db849;
+}
+.right {
+  transform: rotateY(90deg) translateZ(150px);
+  background-color: #e8483f;
+}
+.left {
+  transform: rotateY(-90deg) translateZ(150px);
+  background-color: #ffa6a6;
+}
+.top {
+  transform: rotateX(90deg) translateZ(150px);
+  background-color: #000;
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(150px);
+  background-color: #53bdeb;
+}
+body {
+  font-family: sans-serif;
+
+  display: grid;
+  min-height: 45vw;
+  place-items: center;
+  place-content: center;
+  margin: 0;
+  color: white;
+}
+
+.wrap {
+  width: 300px;
+  height: 300px;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-150px);
+  animation: 20s rotation infinite;
+  animation-delay: 2s;
+}
+
+.cube > * {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: slateblue;
+  border-radius: 5px;
+  text-align: center;
+
+  border: 5px rgb(255, 255, 255) solid;
+  letter-spacing: 3px;
+  font-size: 22pt;
+  box-shadow: slateblue 0px 0px 10px;
+  animation: Build-up 0s 1 0s, infinite 20s color-switch 2s;
+}
+
+@keyframes rotation {
+  0% {
+    transform: translateZ(-150px) rotateY(0deg);
+  }
+  10% {
+    transform: translateZ(-150px) rotateY(90deg);
+  }
+  15% {
+    transform: translateZ(-150px) rotateY(-90deg);
+  }
+  40% {
+    transform: translateZ(-150px) rotateX(90deg);
+  }
+  60% {
+    transform: translateZ(-150px) rotateY(-180deg);
+  }
+  80% {
+    transform: translateZ(-150px) rotateX(-90deg);
+  }
+  100% {
+    transform: translateZ(-150px) rotateX(0deg);
+  }
+}
+
+.front {
+  transform: rotateY(0deg) translateZ(150px);
+  background-color: #f8cc0f;
+}
+.back {
+  transform: rotateY(180deg) translateZ(150px);
+  background-color: #4db849;
+}
+.right {
+  transform: rotateY(90deg) translateZ(150px);
+  background-color: #e8483f;
+}
+.left {
+  transform: rotateY(-90deg) translateZ(150px);
+  background-color: #ffa6a6;
+}
+.top {
+  transform: rotateX(90deg) translateZ(150px);
+  background-color: #000;
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(150px);
+  background-color: #53bdeb;
+}
